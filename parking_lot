@@ -1,0 +1,3 @@
+#!/bin/bash
+mvn clean -q; mvn package -q -DskipTests;
+java -cp target/parkinglot.jar com.gojek.parkinglot.ParkingLotApplication $1
